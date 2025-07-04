@@ -1,0 +1,48 @@
+com.yourstore.ecommerce
+│
+├── model
+│   ├── product
+│   │    ├── Product.java                (abstract parent class)
+│   │    ├── ShippableProduct.java       (abstract)
+│   │    ├── NonShippableProduct.java    (abstract)
+│   │    ├── ExpirableProduct.java       (abstract extends ShippableProduct)
+│   │    ├── NonExpirableProduct.java    (abstract extends ShippableProduct)
+│   │    ├── food
+│   │    │    ├── Cheese.java
+│   │    │    ├── Fruit.java
+│   │    ├── skincare
+│   │    │    ├── Moisturizer.java
+│   │    │    ├── Sunscreen.java
+│   │    ├── games
+│   │    │    ├── PS5Game.java
+│   │    ├── gifts
+│   │    │    ├── FlowerBouquet.java
+│   │    ├── electronics
+│   │    │    ├── TV.java
+│   │    │    ├── Smartphone.java
+│   │    ├── accessories
+│   │         ├── PhoneCase.java
+│   │         ├── Charger.java
+│   │    ├── scratchcards
+│   │         ├── VodafoneCard.java
+│   │         ├── NetflixCard.java
+│
+├── repository
+│   ├── ProductRepository.java
+│   ├── OrderRepository.java
+│
+├── service
+│   ├── ProductService.java
+│   ├── OrderService.java
+│
+├── controller
+│   ├── ProductController.java
+│   ├── OrderController.java
+│
+├── dto
+│   ├── ProductDTO.java
+│   ├── OrderDTO.java
+│
+└── util
+    ├── DateUtils.java
+    ├── ValidationUtils.java
